@@ -1,0 +1,164 @@
+@media (max-width: 1400px) {
+    .header {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .header {
+        padding: 0 50px;
+    }
+
+    .main {
+        padding: 90px 50px 100px 50px;
+    }
+
+    .text_block {
+        width: 100%;
+    }
+
+    .main_section {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .header_open_menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1400px) {
+    .header_nav {
+        display: none;
+    }
+}
+
+@media (max-width: 1220px) {
+    .head_block {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .main_section_inner {
+        width: 100% !important;
+    }
+
+    .inner_headtitle {
+        margin: 30px 0 0 40px;
+    }
+    .inner_title {
+        margin: 0 0 0 40px;
+    }
+    .inner_aside {
+        margin: 20px 0 20px 40px;
+    }
+    .inner_aside div button {
+        right: 30px;
+    }
+}
+
+
+@media (max-width: 960px) {
+    .header_open_menu {
+        right: 100px;
+    }
+    .elements {
+        width: 40%;
+        right: -60px;
+    }
+    .second_block_inner {
+        width: 30%;
+    }
+    .second_block_inner:nth-child(2) {
+        width: 70%;
+    }
+
+    .second_right {
+        position: relative;
+        right: 30px;
+    }
+    
+    .third_right {
+        position: relative;
+        right: 60px;
+    }
+    
+    .third_block,
+    .cards_block,
+    .last_block,
+    .mobile_none {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        margin: 0;
+    }
+
+    .header_logo {
+        width: 147px;
+        height: 70px;
+        top: 3px;
+    }
+
+    .header_open_menu {
+        right: 0px;
+    }
+
+    .elements {
+        width: 63%;
+        background: none;
+        right: 0;
+        transform: skew(0);
+    }
+
+    .header_stars,
+    .header_redlines,
+    .header_button {
+        transform: skew(0deg);
+    }
+    
+    .header_stars {
+        left: 70%;
+    }
+    
+    .header_redlines {
+        display: none;
+    }
+    
+    .header_button {
+        left: -0px;
+        bottom: -31px;
+    }
+    
+    .inner_aside div button {
+        display: none;
+    }
+
+    .second_block {
+        flex-direction: column-reverse;
+    }
+    .second_block_inner {
+        width: 100%;
+    }
+    .second_block_inner:nth-child(2) {
+        width: 100%;
+    }
+    .second_right {
+        position: relative;
+        right: 0px;
+    }
+    
+    .third_right {
+        position: relative;
+        right: 0px;
+    }
+}
+
+@media (max-width: 460px) {
+    .header {
+        padding: 0 20px;
+    }
+}
