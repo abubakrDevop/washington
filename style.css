@@ -85,6 +85,7 @@ body {
     position: relative;
     color: white;
     font-size: 25px;
+    z-index: 3;
 }
 
 .elements {
@@ -120,6 +121,10 @@ body {
     color: white;
     transform: skew(40deg);
     border: none;
+    transition: .3s;
+}
+.header_button:hover {
+    background: #000000;
 }
 
 .header_socials {
@@ -135,7 +140,7 @@ body {
 .mobile_menu {
     position: relative;
     width: 100%;
-    height: 210px;
+    min-height: 210px;
     background: #010D26;
     padding: 30px 200px;
     z-index: 0;
@@ -285,9 +290,15 @@ body {
     background: #BE0A2F;
     color: white;
     border: none;
+    z-index: 1;
+    transition: .3s;
+}
+.inner_aside div button:hover {
+    background: black;
 }
 
 .inner_image {
+    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -404,6 +415,10 @@ body {
     color: white;
     border: none;
     background: #010D26;
+    transition: .3s;
+}
+.third_block_inner button:hover {
+    background: #BE0A2F;
 }
 
 /* -------- MAIN cards_block -------- */
@@ -423,6 +438,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: 1s;
 }
 
 .slider_card {
@@ -461,6 +477,7 @@ body {
     color: white;
     text-decoration: solid;
     align-self: flex-end;
+    z-index: 1;
 }
 
 .overflow {
@@ -468,12 +485,14 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.548);
+    opacity: 0;
     justify-content: center !important;
     flex-direction: column;
+    transition: .3s;
 }
 
 .overflow_active {
-    display: none !important;
+    opacity: 1;
 }
 
 .close_overflow {
@@ -501,6 +520,7 @@ body {
     align-self: center;
     display: flex;
     align-items: center;
+    transition: .5s;
 }
 .slider_move:not(:first-child) {
     margin: 25px 0 0 15px;
@@ -510,7 +530,14 @@ body {
     width: 38px;
     height: 24px;
     border: none;
-    background: #010D26;
+    background: #ffffff;
+    transition: .3s;
+}
+.slider_move_btn_active {
+    background: #010D26 !important;
+}
+.slider_move_btn:hover {
+    box-shadow: 0 0 5px black;
 }
 .slider_move_btn:nth-child(2) {
     background: white;
@@ -550,6 +577,12 @@ body {
     color: white;
     border-radius: 20px;
     background: black;
+    transition: .3s;
+}
+.last_block_titles button:hover {
+    background: white;
+    border: solid 2px black;
+    color: black;
 }
 
 .last_block_videos {
@@ -583,13 +616,18 @@ body {
     color: white;
     background: #010D26;
     border: none;
+    transition: .3s;
+}
+
+.last_block_button:hover {
+    background: #BE0A2F;
 }
 
 /* -------- FOOTER -------- */
 
 .footer {
     width: 100%;
-    height: 160px;
+    min-height: 160px;
     background: #010D26;
     display: flex;
     align-items: center;
@@ -618,6 +656,8 @@ body {
 }
 
 .footer_title {
+    padding: 0 50px 20px 50px;
+    text-align: center;
     color: white;   
     font-weight: bold;
 }
