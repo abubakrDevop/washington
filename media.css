@@ -2,11 +2,17 @@
     .header {
         padding: 0 100px;
     }
+    .mobile_menu {
+        padding: 30px 100px;
+    }
 }
 
 @media (max-width: 1300px) {
     .header {
         padding: 0 50px;
+    }
+    .mobile_menu {
+        padding: 30px 50px;
     }
 
     .main {
@@ -157,8 +163,112 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
     .header {
         padding: 0 20px;
+    }
+    .mobile_menu {
+        padding: 50px 20px 30px 20px;
+    }
+    .close_menu {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        font-size: 25px;
+        color: white;
+    }
+    .elements {
+        width: 100%;
+    }
+
+    .header_button {
+        left: 30%;
+    }
+    .text_block {
+        margin: 40px 0 10px 0;
+    }
+    .main {
+        padding: 50px 20px 100px 20px;
+    }
+    .inner_headtitle {
+        font-size: 30px;
+        margin: 30px 0 0 20px;
+    }
+    .inner_title {
+        margin: 0 0 0 20px;
+        font-size: 50px;
+    }
+    .inner_aside {
+        margin: 20px 0 20px 20px;
+    }
+    .inner_title p {
+        font-size: 16px;
+        top: 2px;
+    }
+    .inner_image {
+        top: 8px;
+    }
+    .second_block_inner h1 {
+        font-size: 50px;
+    }
+    .second_block_inner p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 460px) {
+    .inner_aside div p {
+        font-size: 40px;
+    }
+    .inner_aside div p:not(:first-child) {
+        margin: 0 0 0 20px;
+    }
+    .inner_aside div p span {
+        font-size: 20px;
+    }
+}
+@media (max-width: 360px) {
+    .header_button {
+        left: 20%;
+    }
+    .main {
+        padding: 50px 20px 100px 20px;
+    }
+    .inner_headtitle {
+        font-size: 30px;
+        margin: 30px 0 0 10px;
+    }
+    .inner_title {
+        margin: 0 0 0 10px;
+        font-size: 50px;
+    }
+    .inner_aside {
+        margin: 20px 0 20px 12px;
+    }
+    .inner_title p {
+        font-size: 14px;
+        top: 2px;
+        left: 5px;
+    }
+    .inner_image {
+        top: 8px;
+    }
+    .second_block_inner h1 {
+        font-size: 50px;
+    }
+    .second_block_inner p {
+        font-size: 18px;
+    }
+    .inner_aside div p {
+        font-size: 40px;
+    }
+    .inner_aside div p:not(:first-child) {
+        margin: 0 0 0 10px;
+    }
+    .inner_aside div p span {
+        font-size: 20px;
+    }
+    .second_block_inner:nth-child(2) {
+        width: 100%;
+        padding: 20px;
     }
 }
